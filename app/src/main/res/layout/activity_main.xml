@@ -208,7 +208,7 @@
             android:drawableLeft="@drawable/password"/>
         </androidx.cardview.widget.CardView>
         <Button
-            android:id="@+id/btnRegister"
+            android:id="@+id/btnNext"
             style="@style/button_bg"
             android:background="@drawable/button_rounded"
             android:text="Next"
