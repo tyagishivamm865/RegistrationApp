@@ -95,6 +95,8 @@ class MainActivity : AppCompatActivity() {
 
 
             }
+
+
         }
         viewmodel.getRegisterUser().observe(this, Observer {
             showToast("Next")
@@ -103,36 +105,7 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
-//    fun checkDataEntered() {
-//
-//        if(!isNameValid(etFirstName)) {
-//            etFirstName.setError("Please Insert Valid First Name")
-//        }
-//
-//        if(!isNameValid(etLastName)) {
-//            etLastName.setError("Please Insert Valid Last Name")
-//        }
-//
-//        if (!isPhoneValid(etPhoneNo)) {
-//            etPhoneNo.setError("Please Insert Valid Phone Number")
-//        }
-//
-//        if(!isEmailValid(etEmail))
-//        {
-//            etEmail.setError("Please Insert Valid Email")
-//        }
-//
-//        if(!isValidPassword(etPassword))
-//        {
-//            etPassword.setError("Password Must Contain Min. 1 Number and 1 Special Char.")
-//        }
-//
-//        if(!isValidCPassword(etPassword,etConformPassword))
-//        {
-//            etConformPassword.setError("Password and Confirm Password Should Be Same")
-//        }
-//    }
-
+    // Validating IsEmpty
     fun isEmpty(text: EditText): Boolean {
         val str: CharSequence = text.text.toString()
         return TextUtils.isEmpty(str)
@@ -178,10 +151,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     // Validating Password
-    fun isValidCPassword(password: String,confirm_password: String): Boolean {
+    fun isValidCPassword(password: String, confirm_password: String): Boolean {
         confirm_password.let {
             password.equals(confirm_password)
             return confirm_password != null
-        }?: return false
+        } ?: return false
     }
 }

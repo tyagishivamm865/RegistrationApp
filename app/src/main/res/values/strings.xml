@@ -26,4 +26,27 @@
     <string name="pin">Pin Code</string>
     <string name="youraddress">Your Address</string>
 
+    <string-array name="qualification">
+        <item>Post Graduate</item>
+        <item>Graduate</item>
+        <item>HSC/Diploma</item>
+        <item>SSC</item>
+    </string-array>
+
+    <string-array name="designation">
+        <item>Software Developer</item>
+        <item>Trainee Engineer</item>
+        <item>Database Administrator</item>
+        <item>Business Analyst</item>
+        <item>Project Manager</item>
+    </string-array>
+
+    <string-array name="domain">
+        <item>Android/IOS</item>
+        <item>FullStack Development</item>
+        <item>FrontEnd Development</item>
+        <item>BackEnd Development</item>
+        <item>Cloud Computing Services</item>
+    </string-array>
+
 </resources>
